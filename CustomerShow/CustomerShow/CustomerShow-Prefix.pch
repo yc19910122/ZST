@@ -1,0 +1,18 @@
+//
+// Prefix header for all source files of the 'Icicle' target in the 'Icicle' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+#define Iphone [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "MBProgressHUD.h"
+    #import"ASIHTTPRequest.h"
+    #import"DataPist.h"
+#endif
